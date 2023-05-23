@@ -3,9 +3,11 @@
 
 using namespace std;
 
-void hola(void);
-
 int main()
 {
+    Zombie starter;
+    Zombie *zombie1;
+    zombie1 = starter.newZombie("Jon");
+
     return 0;
 }

@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+using std::cout;
+using std::string;
+using std::endl;
 
 class Zombie
 {
@@ -9,13 +11,13 @@ class Zombie
         string name;
     public:
         void announce(void);
-        Zombie* newZombie(string);
+        Zombie (string newName): name(newName) {};
+        ~Zombie(void){};
 };
 
-Zombie* Zombie::newZombie(string _name)
+Zombie* newZombie(string _name)
 {
-    name = _name;
-    return(Zombie::);
+    return new Zombie (_name);
 }
 
 void Zombie::announce (void)
