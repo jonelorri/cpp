@@ -1,13 +1,8 @@
 #include <iostream>
-#include "lib.h"
-
-using namespace std;
+#include "Zombie.h"
 
 int main()
 {
-    Zombie starter;
-    Zombie *zombie1;
-    zombie1 = starter.newZombie("Jon");
 
     return 0;
 }

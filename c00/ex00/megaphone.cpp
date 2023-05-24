@@ -2,7 +2,8 @@
 #include <algorithm>
 #include <string>
 
-using namespace std;
+using std::cout;
+using std::string;
 
 int main(int argc, char **argv)
 {

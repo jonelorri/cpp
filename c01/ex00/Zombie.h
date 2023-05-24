@@ -10,17 +10,18 @@ class Zombie
     private:
         string name;
     public:
-        void announce(void);
-        Zombie (string newName): name(newName) {};
-        ~Zombie(void){};
+        void announce(void){
+            cout<< name << ":  BraiiiiiiinnnzzzZ..." <<endl;
+        };
+        Zombie (string name){
+            this->name = name;
+        };
+        ~Zombie(void){
+            cout<<this->name<<" Dead"<<endl;
+        };
 };
 
-Zombie* newZombie(string _name)
+Zombie* newZombie(string name)
 {
-    return new Zombie (_name);
-}
-
-void Zombie::announce (void)
-{
-    cout<<name<<":  BraiiiiiiinnnzzzZ..."<<endl;
+    return new Zombie (name);
 }

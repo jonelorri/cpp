@@ -1,6 +1,10 @@
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::string;
+using std::endl;
+using std::cin;
+
 int contador = 0;
 
 class Contact
@@ -188,8 +192,10 @@ int main()
             if (first_name.empty() || last_name.empty() || nickname.empty() || phone_number.empty() || darkest_secret.empty())
                 cout<<"Error: values cannot be empty"<<endl;
             else
+            {
                 contact.set_params(first_name, last_name, nickname, phone_number, darkest_secret);
                 phoneBook.addContact(contact);
+            }
         }
         else if (command == "SEARCH")
         {
