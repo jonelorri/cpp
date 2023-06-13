@@ -5,9 +5,14 @@ void Zombie::announce(void)
     cout<< name << ":  BraiiiiiiinnnzzzZ..." <<endl;
 }
 
-Zombie::Zombie(string zombieName)
+void Zombie::set_name(string newName)
 {
-    name = zombieName;
+    name = newName;
+}
+
+Zombie::Zombie()
+{
+    name = "";
 }
 
 Zombie::~Zombie()
